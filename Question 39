@@ -2,7 +2,7 @@
 #include <stdio.h>
 int main() {
     int num, digit, product = 1;
-    int hasOdd = 0; // To check if there is at least one odd digit
+    int hasOdd = 0; 
 
     printf("Enter a number: ");
     scanf("%d", &num);
