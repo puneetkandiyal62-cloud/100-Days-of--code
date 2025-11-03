@@ -1,6 +1,5 @@
-/42. Write a program to check if a number is a strong number.
+/43. Write a program to check if a number is a strong number.
 #include <stdio.h>
-
 int factorial(int n) {
     int fact = 1;
     for (int i = 1; i <= n; i++)
