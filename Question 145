@@ -1,0 +1,44 @@
+/145.Return a structure containing top student's details from a function.
+#include <stdio.h>
+struct Student {
+    char name[50];
+    int roll;
+    float marks;
+};
+
+struct Student findTopStudent(struct Student s1, struct Student s2) {
+    if (s1.marks > s2.marks) {
+        return s1;   
+    } else {
+        return s2;  
+    }
+}
+
+int main() {
+    struct Student a, b, top;
+
+    printf("Enter details of first student:\n");
+    printf("Name: ");
+    scanf("%s", a.name);
+    printf("Roll Number: ");
+    scanf("%d", &a.roll);
+    printf("Marks: ");
+    scanf("%f", &a.marks);
+
+    printf("\nEnter details of second student:\n");
+    printf("Name: ");
+    scanf("%s", b.name);
+    printf("Roll Number: ");
+    scanf("%d", &b.roll);
+    printf("Marks: ");
+    scanf("%f", &b.marks);
+
+    top = findTopStudent(a, b);
+
+    printf("\n--- Top Student ---\n");
+    printf("Name: %s\n", top.name);
+    printf("Roll Number: %d\n", top.roll);
+    printf("Marks: %.2f\n", top.marks);
+
+    return 0;
+}
